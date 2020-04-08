@@ -8,7 +8,7 @@
     <version>25</version>
   </parent>
 
-  <groupId>org.asynchttpclient</groupId>
+  <groupId>com.hubspot</groupId>
   <artifactId>async-http-client-shaded</artifactId>
   <version>2.12.1.0-SNAPSHOT</version>
 
@@ -98,21 +98,25 @@
             </artifactSet>
             <relocations>
               <relocation>
+                <pattern>org.asynchttpclient.</pattern>
+                <shadedPattern>org.asynchttpclient.shaded.</shadedPattern>
+              </relocation>
+              <relocation>
                 <pattern>io.netty.</pattern>
-                <shadedPattern>org.asynchttpclient.io.netty.</shadedPattern>
+                <shadedPattern>org.asynchttpclient.shaded.io.netty.</shadedPattern>
               </relocation>
               <relocation>
                 <pattern>com.typesafe.netty.</pattern>
-                <shadedPattern>org.asynchttpclient.com.typesafe.netty.</shadedPattern>
+                <shadedPattern>org.asynchttpclient.shaded.com.typesafe.netty.</shadedPattern>
               </relocation>
               <relocation>
                 <pattern>META-INF/native/libnetty_transport_native_epoll_x86_64.so</pattern>
-                <shadedPattern>META-INF/native/liborg_asynchttpclient_netty_transport_native_epoll_x86_64.so</shadedPattern>
+                <shadedPattern>META-INF/native/liborg_asynchttpclient_shaded_netty_transport_native_epoll_x86_64.so</shadedPattern>
                 <rawString>true</rawString>
               </relocation>
               <relocation>
                 <pattern>META-INF/native/libnetty_transport_native_kqueue_x86_64.jnilib</pattern>
-                <shadedPattern>META-INF/native/liborg_asynchttpclient_netty_transport_native_kqueue_x86_64.jnilib</shadedPattern>
+                <shadedPattern>META-INF/native/liborg_asynchttpclient_shaded_netty_transport_native_kqueue_x86_64.jnilib</shadedPattern>
                 <rawString>true</rawString>
               </relocation>
             </relocations>
