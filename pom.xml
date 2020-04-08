@@ -160,7 +160,7 @@
                 <artifact>
                   <file>src/main/javadoc/async-http-client-2.12.1-javadoc.jar</file>
                   <type>jar</type>
-                  <classifier>java</classifier>
+                  <classifier>javadoc</classifier>
                 </artifact>
               </artifacts>
             </configuration>
