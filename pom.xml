@@ -6,6 +6,13 @@
   <artifactId>async-http-client-shaded</artifactId>
   <version>2.12.1.0-SNAPSHOT</version>
 
+  <scm>
+    <connection>scm:git:git@github.com:HubSpot/async-http-client-shaded.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/HubSpot/async-http-client-shaded.git</developerConnection>
+    <url>git@github.com:HubSpot/async-http-client-shaded.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <shaded.pom.path>${project.build.directory}/${project.artifactId}-${project.version}.pom</shaded.pom.path>
   </properties>
