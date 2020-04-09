@@ -16,6 +16,8 @@
     <shaded.pom.path>${project.build.directory}/${project.artifactId}-${project.version}.pom</shaded.pom.path>
 
     <dep.async-http-client.version>2.12.1</dep.async-http-client.version>
+    <!-- Keep this in sync with the version that async-http-client wants -->
+    <dep.netty.version>4.1.48.Final</dep.netty.version>
     <basepom.check.skip-dependency>true</basepom.check.skip-dependency>
   </properties>
 
@@ -26,6 +28,11 @@
         <artifactId>async-http-client</artifactId>
         <version>${dep.async-http-client.version}</version>
       </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-resolver-dns</artifactId>
+        <version>${dep.netty.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -33,6 +40,10 @@
     <dependency>
       <groupId>org.asynchttpclient</groupId>
       <artifactId>async-http-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-resolver-dns</artifactId>
     </dependency>
   </dependencies>
 
