@@ -10,14 +10,14 @@
 
   <groupId>com.hubspot</groupId>
   <artifactId>async-http-client-shaded</artifactId>
-  <version>2.12.1.1-SNAPSHOT</version>
+  <version>2.12.3.1-SNAPSHOT</version>
 
   <properties>
     <shaded.pom.path>${project.build.directory}/${project.artifactId}-${project.version}.pom</shaded.pom.path>
 
-    <dep.async-http-client.version>2.12.1</dep.async-http-client.version>
+    <dep.async-http-client.version>2.12.3</dep.async-http-client.version>
     <!-- Keep this in sync with the version that async-http-client wants -->
-    <dep.netty.version>4.1.48.Final</dep.netty.version>
+    <dep.netty.version>4.1.60.Final</dep.netty.version>
     <basepom.check.skip-dependency>true</basepom.check.skip-dependency>
   </properties>
 
@@ -169,7 +169,7 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>src/main/javadoc/async-http-client-2.12.1-javadoc.jar</file>
+                  <file>src/main/javadoc/async-http-client-2.12.3-javadoc.jar</file>
                   <type>jar</type>
                   <classifier>javadoc</classifier>
                 </artifact>
