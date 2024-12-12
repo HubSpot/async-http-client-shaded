@@ -15,7 +15,7 @@
   <properties>
     <shaded.pom.path>${project.build.directory}/${project.artifactId}-${project.version}.pom</shaded.pom.path>
 
-    <dep.async-http-client.version>2.12.3</dep.async-http-client.version>
+    <dep.async-http-client.version>3.0.1</dep.async-http-client.version>
     <!-- Keep this in sync with the version that async-http-client wants -->
     <dep.netty.version>4.1.60.Final</dep.netty.version>
     <basepom.check.skip-dependency>true</basepom.check.skip-dependency>
